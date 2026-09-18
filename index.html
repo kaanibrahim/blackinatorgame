@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>Blackinator</title>
+    <!-- Adding a version query to the CSS file as browsers apparently cache CSS aggresively-->
+    <link rel="stylesheet" href="style.css?v=3"/>
+    <!-- javascript file-->
+    <script src="functions.js"></script>
+    <!-- Google Adsense-->
+    <meta name="google-adsense-account" content="ca-pub-8761761700848985">
+</head>
+<body onload="run()">
+    <header>
+        <h1>Blackinator</h1>
+    </header>
+    <main>
+        <div id="grid">
+            <div id="1" class="grid-item" onclick="changeColour(this)"></div>
+            <div id="2" class="grid-item" onclick="changeColour(this)"></div>
+            <div id="3" class="grid-item" onclick="changeColour(this)"></div>
+            <div id="4" class="grid-item" onclick="changeColour(this)"></div>
+            <div id="5" class="grid-item" onclick="changeColour(this)"></div>
+            <div id="6" class="grid-item" onclick="changeColour(this)"></div>
+            <div id="7" class="grid-item" onclick="changeColour(this)"></div>
+            <div id="8" class="grid-item" onclick="changeColour(this)"></div>
+            <div id="9" class="grid-item" onclick="changeColour(this)"></div>
+        </div>
+        <div id="score">0</div>
+    </main>
+    <footer></footer>
+</body>
+</html>
