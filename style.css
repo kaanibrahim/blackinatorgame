@@ -8,8 +8,9 @@ header{
 
 #grid {
     border: 10px solid red;
+    box-sizing: border-box;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);;
+    grid-template-columns: repeat(3, 1fr);
     width: 80vw;
     height: 80vw;
     max-width: 80vh;
@@ -29,7 +30,21 @@ header{
 #score {
     text-align: center;
     width: 100%;
+    box-sizing: border-box;
     font-size: 2em;
     font-weight: bold;
     padding: 10px;
+}
+
+@media (max-width: 600px) {
+    body {
+        margin: 0;
+    }
+
+    #grid {
+        width: 100vw;
+        height: 100vw;
+        max-width: none;
+        max-height: none;
+    }
 }
